@@ -1,30 +1,29 @@
-# Student Attendance Management System
+final
+Student Attendance Management System
 
-This is a small Python project for keeping track of student attendance. I kept the design deliberately simple so that the program is easy to run, understand, and demonstrate in a first-year project.
+A small project implemented in Python for managing student's attendance. The design is kept simple for easier run, understanding, and demonstration as it is a first-year project.
 
-The program can add students, mark daily attendance, search and update records, calculate attendance percentages, and produce a report showing students below 75%.
+The application allows you to add students, mark attendance (present/absent) for a particular day, view students, search for a student by roll number, update and delete students, calculate attendance percentage, view class average, view students below 75%, save in JSON, and automated unit tests.
 
-## Features
+Features
 
-- Add student
-- Mark Present/Absent attendance by date
-- View all students
-- Search by roll number
-- Update student details
-- Delete a student with confirmation
-- Calculate attendance percentage
-- Show class average
-- Find students below 75%
-- Save records in JSON
-- Automated unit tests
+• Add student
+• Mark Present/Absent attendance by date
+• View all students
+• Search by roll number
+• Update student
+• Delete a student (with confirmation)
+• Calculate attendance percentage
+• View class average
+• View students below 75%
+• Save records in JSON
+• Automated unit tests
+Tech
 
-## Technology
+Python 3 and the Python standard library only. JSON is used for saving, and unittest is used for testing.
 
-Python 3 and the Python standard library only. JSON is used for storage and `unittest` is used for testing.
+Structure
 
-## Structure
-
-```text
 Student Attendance Management System/
 ├── student_attendance_management.py
 ├── README.md
@@ -36,28 +35,23 @@ Student Attendance Management System/
 ├── docs/ALGORITHM_AND_FLOW.md
 ├── docs/PROJECT_REPORT.md
 └── tests/
-    ├── __init__.py
-    └── test_attendance.py
-```
+├── __init__.py
+└── test_attendance.py
 
-## Run
+How to Run
 
-```bash
 python student_attendance_management.py
-```
 
-## Test
+How to Test
 
-```bash
 python -m unittest discover -s tests -v
-```
 
-No external packages are required.
+No external libraries are used.
 
-## Data
+Data
 
-Attendance is stored in `data/attendance.json`. If the file is missing, the program starts with an empty list and creates the file when data is first saved.
+The data is stored in data/attendance,json. In case of a missing file, the application will start with an empty list and save the data on the first run.
 
-## Note
+Note
 
-The 75% value is used as a reporting threshold in this project. It is not intended to represent a specific college's official attendance policy.
+The value 75% is set as the lower threshold for attendance percentage in this application, but it does not imply that it is the actual attendance policy of any particular college.
