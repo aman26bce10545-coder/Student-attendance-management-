@@ -66,9 +66,3 @@ The data is stored in data/attendance,json. In case of a missing file, the appli
 ## Note
 
 The value 75% is set as the lower threshold for attendance percentage in this application, but it does not imply that it is the actual attendance policy of any particular college.
-
-## Author
-
-Name :- AMAN RAJ GUPTA
-
-Registration Number :- 26BCE10545
